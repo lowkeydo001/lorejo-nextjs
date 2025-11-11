@@ -1,5 +1,6 @@
 import Image from "next/image";
-import ReservationSidebar from "../ReservationSidebar";
+import ReservationSidebar from "../../components/properties/ReservationSidebar";
+
 
 const PropertyDetailPage = () => {
     return (
@@ -7,21 +8,26 @@ const PropertyDetailPage = () => {
             <div className="w-full h-[64vh] mb-4 overflow-hidden rounded-xl relative">
                 <Image
                     fill
-                    src="/beach_1.jpg"
+                    src="/beach_1.jpeg"
                     className="object-cover w-full h-full"
                     alt="Beach house"
                 />
             </div>
 
+
+
+
             <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
                 <div className="py-6 pr-6 col-span-3">
-                    <h1 className="mb-4 text-4xl">Property Name</h1>
+                    <h1 className="mb-4 text-4xl">lorejoproperty</h1>
+
+
+
 
                     <span className="mb-6 block text-lg text-gray-600">
                         4 guests - 2 bedrooms - 1 bathrooms
                     </span>
                     <hr />
-
                     <div className="py-6 flex items-center space-x-4">
                         <Image
                             src="/profile_pic_1.jpg"
@@ -30,20 +36,38 @@ const PropertyDetailPage = () => {
                             className="rounded-full"
                             alt="The user name"
                         />
-                        <p><strong>Edsel Gwapo</strong> is your host</p>
-                    </div>
+                        <p><strong>Edsel tisoy</strong> is your host</p>
 
+
+
+
+                    </div>
                     <hr />
 
+
+
+
                     <p className="mt-6 text-lg">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
+
+
+
 
                 <ReservationSidebar />
             </div>
         </main>
-    );
-};
+    )
+}
+
+
+
 
 export default PropertyDetailPage;
+
+
+
