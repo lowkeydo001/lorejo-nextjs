@@ -52,3 +52,5 @@ export async function getUserId() {
     const userId = cookieStore.get('session_userid')?.value
     return userId ? userId : null
 }
+
+

@@ -37,7 +37,6 @@ const apiService = {
                 method: 'POST',
                 body: data,
                 headers: {
-                    // 'Authorization': `Bearer`,
                     'Content-Type': 'application/json'
                 }
             })
