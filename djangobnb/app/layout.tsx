@@ -3,7 +3,10 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar/navbar";
 import LoginModal from "./components/modals/LoginModal";
-import SignupModal from "./components/modals/SignupModal";
+import SignUpModal from "./components/modals/SignupModal";
+import AddPropertyModal from "./components/modals/AddPropertyModal";
+
+
 
 
 
@@ -50,8 +53,11 @@ export default function RootLayout({
 
 
         <LoginModal />
-        <SignupModal />
+        <SignUpModal />
+        <AddPropertyModal />
       </body>
     </html>
   );
 }
+
+
