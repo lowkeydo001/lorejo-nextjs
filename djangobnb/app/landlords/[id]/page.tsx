@@ -9,7 +9,7 @@ import ContactButton from "@/app/components/ContactButton";
 
 const LandlordDetailPage = async (props: { params: { id: string } }) => {
     const params = await props.params;
-    const landlord = await apiService.get(`/api/auth/landlord/${params.id}/`);
+    const landlord = await apiService.get(`/api/auth/${params.id}/`);
     const userId = await getUserId();
 
 
