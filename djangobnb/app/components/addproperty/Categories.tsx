@@ -19,7 +19,7 @@ const Categories: React.FC<CategoriesProps> = ({
                     className={`pb-4 flex flex-col items-center space-y-2 border-b-2 ${dataCategory == 'beach' ? 'border-gray-800' : 'border-white'} opacity-60 hover:border-gray-200 hover:opacity-100`}
                 >
                     <Image
-                        src="/icn_category_beach.jpeg"
+                        src="/icn_category_beach.jpg"
                         alt="Category - Beach"
                         width={20}
                         height={20}
@@ -35,7 +35,7 @@ const Categories: React.FC<CategoriesProps> = ({
                     className={`pb-4 flex flex-col items-center space-y-2 border-b-2 ${dataCategory == 'villas' ? 'border-gray-800' : 'border-white'} opacity-60 hover:border-gray-200 hover:opacity-100`}
                 >
                     <Image
-                        src="/icn_category_beach.jpeg"
+                        src="/icn_category_beach.jpg"
                         alt="Category - Beach"
                         width={20}
                         height={20}
@@ -51,7 +51,7 @@ const Categories: React.FC<CategoriesProps> = ({
                     className={`pb-4 flex flex-col items-center space-y-2 border-b-2 ${dataCategory == 'cabins' ? 'border-gray-800' : 'border-white'} opacity-60 hover:border-gray-200 hover:opacity-100`}
                 >
                     <Image
-                        src="/icn_category_beach.jpeg"
+                        src="/icn_category_beach.jpg"
                         alt="Category - Beach"
                         width={20}
                         height={20}
@@ -67,7 +67,7 @@ const Categories: React.FC<CategoriesProps> = ({
                     className={`pb-4 flex flex-col items-center space-y-2 border-b-2 ${dataCategory == 'tiny_homes' ? 'border-gray-800' : 'border-white'} opacity-60 hover:border-gray-200 hover:opacity-100`}
                 >
                     <Image
-                        src="/icn_category_beach.jpeg"
+                        src="/icn_category_beach.jpg"
                         alt="Category - Beach"
                         width={20}
                         height={20}

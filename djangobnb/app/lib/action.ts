@@ -7,9 +7,12 @@ import { cookies } from 'next/headers';
 export async function handleRefresh() {
     console.log('handleRefresh');
 
-
     const refreshToken = await getRefreshToken();
 
+    if (!refreshToken) {
+        console.log('No refresh token available');
+        return null;
+    }
 
     const token = await fetch('http://localhost:8000/api/auth/token/refresh/', {
         method: 'POST',
@@ -25,7 +28,6 @@ export async function handleRefresh() {
         .then(async (json) => {
             console.log('Response - Refresh:', json);
 
-
             if (json.access) {
                 const cookieStore = await cookies();
                 cookieStore.set('session_access_token', json.access, {
@@ -35,7 +37,6 @@ export async function handleRefresh() {
                     path: '/'
                 });
 
-
                 return json.access;
             } else {
                 resetAuthCookies();
@@ -44,10 +45,8 @@ export async function handleRefresh() {
         .catch((error) => {
             console.log('error', error);
 
-
             resetAuthCookies();
         })
-
 
     return token;
 }
@@ -105,13 +104,9 @@ export async function getAccessToken() {
     const cookieStore = await cookies();
     let accessToken = cookieStore.get('session_access_token')?.value;
 
-
     if (!accessToken) {
         accessToken = await handleRefresh();
     }
-
-
-
 
     return accessToken;
 }

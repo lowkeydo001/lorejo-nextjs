@@ -164,4 +164,3 @@ const PropertyList: React.FC<PropertyListProps> = ({
 
 export default PropertyList;
 
-
